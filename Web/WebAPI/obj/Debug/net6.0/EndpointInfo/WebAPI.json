@@ -1,0 +1,1003 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/AG_Users": {
+      "get": {
+        "tags": [
+          "AG_Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AG_Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AG_Users/{id}": {
+      "get": {
+        "tags": [
+          "AG_Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AG_Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AG_Users"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/API_Users": {
+      "post": {
+        "tags": [
+          "API_Users"
+        ],
+        "parameters": [
+          {
+            "name": "UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/API_Warehouse": {
+      "post": {
+        "tags": [
+          "API_Warehouse"
+        ],
+        "parameters": [
+          {
+            "name": "warehouseId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CommitmentTime": {
+        "type": "object",
+        "properties": {
+          "commitmentTimeId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "timeSlot": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "maxslots": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remainingSlots": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "warehouseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "warehouse": {
+            "$ref": "#/components/schemas/Warehouse"
+          },
+          "deliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeliveryRequest"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Customer": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sex": {
+            "type": "boolean"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "detailedAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeliveryRequest"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeliveryRequest": {
+        "type": "object",
+        "properties": {
+          "deliveryId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deliveryType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isComplete": {
+            "type": "boolean"
+          },
+          "deliveryNote": {
+            "type": "string",
+            "nullable": true
+          },
+          "detailedAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "warehouseIdDes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phoneNumberCustomer": {
+            "type": "string",
+            "nullable": true
+          },
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imei": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "commitmentTimeId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "commitmentTime": {
+            "$ref": "#/components/schemas/CommitmentTime"
+          },
+          "imeiNavigation": {
+            "$ref": "#/components/schemas/ImeiProduct"
+          },
+          "phoneNumberCustomerNavigation": {
+            "$ref": "#/components/schemas/Customer"
+          },
+          "ward": {
+            "$ref": "#/components/schemas/Ward"
+          },
+          "warehouseIdDesNavigation": {
+            "$ref": "#/components/schemas/Warehouse"
+          },
+          "historyOfDeliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfDeliveryRequest"
+            },
+            "nullable": true
+          },
+          "verifies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Verify"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "District": {
+        "type": "object",
+        "properties": {
+          "districtId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "districtName": {
+            "type": "string",
+            "nullable": true
+          },
+          "provinceId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "province": {
+            "$ref": "#/components/schemas/Province"
+          },
+          "wards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ward"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoryOfDeliveryRequest": {
+        "type": "object",
+        "properties": {
+          "historyOfDeliveryRequest1": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userIdUpdate": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userIdAutherized": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/DeliveryRequest"
+          },
+          "userIdAutherizedNavigation": {
+            "$ref": "#/components/schemas/User"
+          },
+          "userIdUpdateNavigation": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoryOfImeiproduct": {
+        "type": "object",
+        "properties": {
+          "historyOfImeiproductId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "warehouseIdUpdate": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "imei": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "imeiNavigation": {
+            "$ref": "#/components/schemas/ImeiProduct"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoryOfWarehouse": {
+        "type": "object",
+        "properties": {
+          "historyOfWarehouseId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "warehouseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "warehouse": {
+            "$ref": "#/components/schemas/Warehouse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ImeiProduct": {
+        "type": "object",
+        "properties": {
+          "imei": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "warehouseIdNow": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "product": {
+            "$ref": "#/components/schemas/Product"
+          },
+          "deliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeliveryRequest"
+            },
+            "nullable": true
+          },
+          "historyOfImeiproducts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfImeiproduct"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Location": {
+        "type": "object",
+        "properties": {
+          "locationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nation": {
+            "$ref": "#/components/schemas/Nation"
+          },
+          "provinces": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Province"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Nation": {
+        "type": "object",
+        "properties": {
+          "nationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "locations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Location"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productName": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentStock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeOfProductId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeOfProduct": {
+            "$ref": "#/components/schemas/TypeOfProduct"
+          },
+          "imeiProducts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImeiProduct"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Province": {
+        "type": "object",
+        "properties": {
+          "provinceId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "provinceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "districts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/District"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TypeOfProduct": {
+        "type": "object",
+        "properties": {
+          "typeOfProductId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productName": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentStock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TypeOfWarehouse": {
+        "type": "object",
+        "properties": {
+          "typeOfWarehouseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeOfWarehouseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "warehouses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Warehouse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "avatar": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "warehouseIdWork": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "warehouseIdWorkNavigation": {
+            "$ref": "#/components/schemas/Warehouse"
+          },
+          "historyOfDeliveryRequestUserIdAutherizedNavigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfDeliveryRequest"
+            },
+            "nullable": true
+          },
+          "historyOfDeliveryRequestUserIdUpdateNavigations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfDeliveryRequest"
+            },
+            "nullable": true
+          },
+          "historyOfImeiproducts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfImeiproduct"
+            },
+            "nullable": true
+          },
+          "historyOfWarehouses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfWarehouse"
+            },
+            "nullable": true
+          },
+          "verifies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Verify"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Verify": {
+        "type": "object",
+        "properties": {
+          "verifyCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deliveryId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/DeliveryRequest"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ward": {
+        "type": "object",
+        "properties": {
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "wardName": {
+            "type": "string",
+            "nullable": true
+          },
+          "districtId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "district": {
+            "$ref": "#/components/schemas/District"
+          },
+          "deliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeliveryRequest"
+            },
+            "nullable": true
+          },
+          "warehouses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Warehouse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Warehouse": {
+        "type": "object",
+        "properties": {
+          "warehouseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "warehouseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "detailedAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "capacity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "currentStock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeOfWarehouseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "typeOfWarehouse": {
+            "$ref": "#/components/schemas/TypeOfWarehouse"
+          },
+          "ward": {
+            "$ref": "#/components/schemas/Ward"
+          },
+          "commitmentTimes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommitmentTime"
+            },
+            "nullable": true
+          },
+          "deliveryRequests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DeliveryRequest"
+            },
+            "nullable": true
+          },
+          "historyOfWarehouses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryOfWarehouse"
+            },
+            "nullable": true
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

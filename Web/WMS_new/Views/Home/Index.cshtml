@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="card">
+    <h4 class="card-header">
+        Tìm kiếm JobCard
+        <a class="btn btn-outline-primary float-end" href="" role="button"><img width="25" height="25" src="/logo/icons8-create.gif" alt="logoCreateJobcard" style="margin-right:5px" />Tạo JOBCARD</a>
+        <br />
+        <span style="font-size: 13px; font-weight: 400;">
+            <font style="font-style: italic;">Tìm theo Jobcard, số điện thoại, IMEI BH, mã vận đơn</font>
+        </span>
+    </h4>
+
+    <div class="card-body">
+        <div class="input-group mb-3">
+            <input id="searchInput" type="text" class="form-control" placeholder="Vui lòng nhập chính xác mã cần tìm" aria-describedby="button-addon2">
+            <button onclick="searchData()" class="btn btn-warning text-white" type="button" id="button-addon2"><img width="23" height="23" src="/logo/icons8-find-48.png" alt="search" style="margin-right:5px" />Tìm kiếm</button>
+        </div>
+        <div id="results">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="table-secondary">
+                        <th>Thông tin chung</th>
+                        <th>Ngày trả</th>
+                        <th>Kho hiện tại</th>
+                        <th>Người giữ</th>
+                        <th>Mã vận đơn</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                    <!-- Dữ liệu tìm kiếm sẽ được thêm vào đây -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function searchData() {
+        const searchQuery = document.getElementById("searchInput").value; // Loại bỏ khoảng trắng thừa
+
+        if (!searchQuery) {
+            alert("Vui lòng nhập nội dung tìm kiếm.");
+            return;
+        }
+
+        // Gửi yêu cầu tìm kiếm tới server
+        fetch(`/Home/GetSearchResults?searchQuery=${searchQuery}`)
+            .then(response => response.json()) // Nhận dữ liệu trả về từ Controller dưới dạng JSON
+            .then(data => {
+                console.log(data); // Kiểm tra dữ liệu trả về trong console
+
+                // Làm sạch dữ liệu trong bảng trước khi thêm mới
+                const tableBody = document.getElementById("resultsTableBody");
+                // tableBody.innerHTML = ""; // Xóa tất cả các hàng trong tbody
+
+                // Xử lý khi dữ liệu trả về là mảng
+                if (Array.isArray(data) && data.length > 0 && data[0].phone) {
+                    tableBody.innerHTML = ""; // Xóa tất cả các hàng trong tbody
+                    data.forEach(item => {
+                        if (item.deliveryRequests) {
+                            item.deliveryRequests.forEach(dr => {
+                                const row = document.createElement("tr");
+                                row.innerHTML = `
+                                    <td>
+                                        <div>
+                                            <b><a href="/DeliveryRequest/Index/${dr.deliveryId}" class="text-decoration-none">${dr.deliveryId}</a></b>
+                                            <div><b>Bước:</b> <span>${dr.status}</span></div>
+                                            <div><b>Ngày tạo:</b> <span>${new Date(dr.createAt).toLocaleDateString()}</span></div>
+                                        </div>
+                                    </td>
+                                    <td>${dr.completeAt ? new Date(dr.completeAt).toLocaleDateString() : "Chưa hoàn thành"}</td>
+                                        <td>${dr.warehouseIdStart} - ${dr.warehouseName}</td>
+                                    <td>${dr.userId} - ${dr.fullName}</td>
+                                    <td><a href="/DeliveryRequest/Index/${dr.deliveryId}" class="text-decoration-none">${dr.deliveryId}</a></td>
+                                `;
+                                tableBody.appendChild(row);
+                            });
+                        }
+                    });
+                }
+                // Xử lý khi dữ liệu trả về là một đối tượng
+                else if (Array.isArray(data) && data.length > 0 && data[0].deliveryId) {
+                    tableBody.innerHTML = ""; // Xóa tất cả các hàng trong tbody
+                    data.forEach(item => {
+                        const row = document.createElement("tr");
+                        row.innerHTML = `
+                                    <td>
+                                        <div>
+                                            <b><a href="/DeliveryRequest/Index/${item.deliveryId}" class="text-decoration-none">${item.deliveryId}</a></b>
+                                            <div><b>Bước:</b> <span>${item.status}</span></div>
+                                            <div><b>Ngày tạo:</b> <span>${new Date(item.createAt).toLocaleDateString()}</span></div>
+                                        </div>
+                                    </td>
+                                        <td>${item.completeAt ? new Date(item.completeAt).toLocaleDateString() : "Chưa hoàn thành"}</td>
+                                        <td>${item.warehouseIdStart} - ${item.warehouseName}</td>
+                                        <td>${item.userId} - ${item.fullName}</td>
+                                        <td><a href="/DeliveryRequest/Index/${item.deliveryId}" class="text-decoration-none">${item.deliveryId}</a></td>
+                                `;
+                        tableBody.appendChild(row);
+                    })
+                }
+                // Xử lý khi không có kết quả
+                else {
+                    tableBody.innerHTML = ""; // Xóa tất cả các hàng trong tbody
+                    const row = document.createElement("tr");
+                    row.innerHTML = "<td colspan='5'>Không tìm thấy kết quả!</td>";
+                    tableBody.appendChild(row);
+                }
+            })
+    }
+</script>

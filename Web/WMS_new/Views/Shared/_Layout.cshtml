@@ -1,0 +1,194 @@
+﻿@*Session libraries*@
+@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+
+@*Handle Session*@
+@{
+    var uLogin = JsonConvert.DeserializeObject<User>(Context.Session.GetString("User"));
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WMS_new.styles.css" asp-append-version="true" />
+    <link rel="icon" href="/logo/logo.png" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="/logo/logo-2.png" alt="Logo" width="180" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @{
+                            if (1 == 0)
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Công việc
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @*@uLogin?.UserId*@
+                                        <li><a class="dropdown-item" asp-route-aUser="" asp-controller="DeliveryStatus" asp-action="toDoListByAuthorizedUser">Danh sách công việc</a></li>
+                                        @*@uLogin?.UserId*@
+                                        <li><a class="dropdown-item" asp-route-aUser="" asp-controller="DeliveryRequest" asp-action="listProductImporting">Nhập kho sau chuyển kho</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @*@(@uLogin?.UserId + " - " + uLogin?.FullName + " - Kho làm việc: " + uWarehouseJoined?.WarehouseIdWork)*@
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="joinWarehouse">Đổi kho làm việc</a></li>
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="Login">Đăng xuất</a></li>
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <!--Trang chủ-->
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                </li>
+                                <!--Tạo yêu cầu-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tạo yêu cầu
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @*<li><a class="dropdown-item" asp-controller="" asp-action="">Tạo Jobcard (BHTN)</a></li>*@
+                                        @* <li><a class="dropdown-item" asp-controller="" asp-action="">Tạo Jobcard (OEM)</a></li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="">Tạo Jobcard (ST) </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" asp-controller="DeliveryRequest" asp-action="add" asp-route-dType="VC">Tạo yêu cầu vận chuyển</a></li> *@
+                                        <li><a class="dropdown-item" asp-controller="DeliveryRequest" asp-action="add" asp-route-dType="CK">Tạo yêu cầu chuyển kho</a></li>
+                                    </ul>
+                                </li>
+                                <!--Điều phối-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Điều phối
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @*                                 <li><a class="dropdown-item" asp-controller="" asp-action="">Điều phối NV đi BH</a></li>
+                                *@
+                                        <li><a class="dropdown-item" asp-controller="DeliveryRequest" asp-action="listDeliveryRequestByWarehouseIdWork">Điều phối NV đi vận chuyển</a></li>
+                                    </ul>
+                                </li>
+                                <!--Khai báo-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Khai báo
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @* <li><a class="dropdown-item" asp-controller="CommitmentTime" asp-action="Index" asp-route-warrantyType="BHTN">Khai báo tải BHTN</a></li>
+                                <li><a class="dropdown-item" asp-controller="CommitmentTime" asp-action="Index" asp-route-warrantyType="TTBH">Khai báo thời gian dự kiến Hãng cam kết (TTBH)</a></li> *@
+                                        <li><a class="dropdown-item" asp-controller="CommitmentTime" asp-action="Index" asp-route-warrantyType="KHO">Khai báo tải vận chuyển/chuyển kho</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" asp-controller="Province" asp-action="Index">Khai báo Địa phương</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse">Khai báo Kho</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse_WarrantyCenter">Khai báo TTBH</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse_WarrantyCenter_AtHome">Khai báo TTBHTN</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="listOfUserToDeclareByWarehouse">Khai báo nhân sự theo Kho</a></li>
+                                        @*  <li><a class="dropdown-item" asp-controller="" asp-action="">Khai báo nhân sự Hãng</a></li> *@
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" asp-controller="ProductSelected" asp-action="Index">Khai báo sản phẩm</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Material" asp-action="Index">Khai báo vật tư</a></li>
+                                    </ul>
+                                </li>
+                                <!--Công việc-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Công việc
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @*@uLogin?.UserId*@
+                                        <li><a class="dropdown-item" asp-route-aUser="" asp-controller="DeliveryStatus" asp-action="toDoListByAuthorizedUser">Danh sách công việc</a></li>
+                                        @*@uLogin?.UserId*@
+                                        <li><a class="dropdown-item" asp-route-aUser="" asp-controller="DeliveryRequest" asp-action="listProductImporting">Nhập kho sau chuyển kho</a></li>
+                                    </ul>
+                                </li>
+                                <!--HRM-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        HRM
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="findUser">Tìm nhân viên</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        @*                                        <li><a class="dropdown-item" asp-controller="Role" asp-action="listRole">Phân quyền truy cập</a></li>
+*@
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="addUser">Thêm nhân viên</a></li>
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="updateUser">Sửa thông tin</a></li>
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="deleteUser">Xóa nhân viên</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Role" asp-action="Index">Khai báo Role</a></li>
+                                    </ul>
+                                </li>
+                                <!--CRM
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        CRM
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                @* <li><a class="dropdown-item" asp-controller="" asp-action="">Bán hàng</a></li>
+                                <li><a class="dropdown-item" asp-controller="" asp-action="">Tìm khách hàng</a></li> *@
+                                        <li><a class="dropdown-item" asp-controller="" asp-action="">Xóa thông tin KH</a></li>
+                                    </ul>
+                                </li>-->
+                                <!--SP Tồn kho
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tồn kho
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-contrvoller="" asp-action="">Xem kho</a></li>
+                                @* <li><a class="dropdown-item" asp-controller="" asp-action="">Tìm khách hàng</a></li> *@
+                                    </ul>
+                                </li>-->
+                                <!--UserLogin-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @*@(@uLogin?.UserId + " - " + uLogin?.FullName + " - Kho làm việc: " + uWarehouseJoined?.WarehouseIdWork)*@
+                                        @(uLogin?.UserId + " - " + uLogin?.FullName + " -  Kho đang làm việc: " + uLogin?.WarehouseIdWork)
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="joinWarehouse">Đổi mật khẩu</a></li>
+                                        <li><a class="dropdown-item" asp-controller="User" asp-action="joinWarehouse">Đổi kho đang làm việc</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Users" asp-action="Logout">Đăng xuất</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - WMS_new - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

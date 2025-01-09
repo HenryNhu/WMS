@@ -1,0 +1,378 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\controllers\\api_warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\api_warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\warehouse\\selectworkingwarehouse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\warehouse\\selectworkingwarehouse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\controllers\\api_userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\api_userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\middleware\\loggedchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\middleware\\loggedchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\middleware\\sessionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\middleware\\sessionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\wms_new.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\wms_new.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\models\\wms_newcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\models\\wms_newcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\webapi\\controllers\\ag_userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B47BEF1-BC38-4F23-B809-A36880A8095B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\ag_userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|c:\\users\\nhuqu\\onedrive\\projects\\wms\\wms_new\\web\\wms_new\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17165CC0-6F86-4079-9DB7-38C196CD3CED}|WMS_new\\WMS_new.csproj|solutionrelative:wms_new\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T18:55:57.445Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WMS_new\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:54:34.89Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WarehouseController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\WarehouseController.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Controllers\\WarehouseController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\WarehouseController.cs",
+              "RelativeToolTip": "WMS_new\\Controllers\\WarehouseController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T20:00:33.68Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectWorkingWarehouse.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Warehouse\\SelectWorkingWarehouse.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\Warehouse\\SelectWorkingWarehouse.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Warehouse\\SelectWorkingWarehouse.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\Warehouse\\SelectWorkingWarehouse.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T20:07:02.249Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "API_WarehouseController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\API_WarehouseController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\API_WarehouseController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\API_WarehouseController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\API_WarehouseController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T07:22:35.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\WebAPI.csproj",
+              "RelativeDocumentMoniker": "WebAPI\\WebAPI.csproj",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\WebAPI.csproj",
+              "RelativeToolTip": "WebAPI\\WebAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-05T18:14:32.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\Users\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-03T20:47:06.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "API_UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\API_UsersController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\API_UsersController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\API_UsersController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\API_UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:56:35.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T19:14:29.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Program.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Program.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Program.cs",
+              "RelativeToolTip": "WMS_new\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:50:05.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WMS_new\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T18:48:41.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoggedChecker.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Middleware\\LoggedChecker.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Middleware\\LoggedChecker.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Middleware\\LoggedChecker.cs",
+              "RelativeToolTip": "WMS_new\\Middleware\\LoggedChecker.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T19:13:27.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Models\\User.cs",
+              "RelativeToolTip": "WMS_new\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:37:36.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SessionChecker.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Middleware\\SessionChecker.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Middleware\\SessionChecker.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Middleware\\SessionChecker.cs",
+              "RelativeToolTip": "WMS_new\\Middleware\\SessionChecker.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T18:26:36.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T18:53:15.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WMS_new\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WMS_new\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T18:53:14.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WMS_newContext.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Models\\WMS_newContext.cs",
+              "RelativeDocumentMoniker": "WMS_new\\Models\\WMS_newContext.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\Models\\WMS_newContext.cs",
+              "RelativeToolTip": "WMS_new\\Models\\WMS_newContext.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA8wCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:21:09.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T18:09:30.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WMS_new.csproj",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\WMS_new.csproj",
+              "RelativeDocumentMoniker": "WMS_new\\WMS_new.csproj",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\WMS_new.csproj",
+              "RelativeToolTip": "WMS_new\\WMS_new.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-03T20:18:43.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T18:13:44.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AG_UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\AG_UsersController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AG_UsersController.cs",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WebAPI\\Controllers\\AG_UsersController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AG_UsersController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAmwGIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T20:31:54.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\appsettings.json",
+              "RelativeDocumentMoniker": "WMS_new\\appsettings.json",
+              "ToolTip": "C:\\Users\\nhuqu\\OneDrive\\Projects\\WMS\\WMS_new\\Web\\WMS_new\\appsettings.json",
+              "RelativeToolTip": "WMS_new\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T21:22:59.736Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
