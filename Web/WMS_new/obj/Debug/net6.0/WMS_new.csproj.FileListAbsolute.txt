@@ -562,3 +562,4 @@ C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WMS_new\obj\Debug\net6.0\refint
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WMS_new\obj\Debug\net6.0\WMS_new.pdb
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WMS_new\obj\Debug\net6.0\WMS_new.genruntimeconfig.cache
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WMS_new\obj\Debug\net6.0\ref\WMS_new.dll
+C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WMS_new\obj\Debug\net6.0\WMS_new.sourcelink.json

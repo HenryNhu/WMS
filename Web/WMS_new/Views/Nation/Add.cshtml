@@ -1,0 +1,19 @@
+﻿@model WMS_new.Models.Nation
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="text-align:center">
+    <h1>THÊM TỈNH/THÀNH</h1>
+</div>
+<form asp-action="Add" method="post">
+    <div class="mb-3">
+        <label asp-for="NationName" class="form-label"></label>
+        <input asp-for="NationName" type="text" class="form-control">
+    </div>
+    <div class="float-end">
+        <input class="btn btn-success" type="submit" value="Thêm Quốc gia">
+        <a class="btn btn-danger" asp-action="Index" role="button">Quay lại</a>
+    </div>
+</form>

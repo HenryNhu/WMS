@@ -562,3 +562,4 @@ C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WebAPI\obj\Debug\net6.0\refint\
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\nhuqu\OneDrive\Projects\WMS\WMS_new\Web\WebAPI\obj\Debug\net6.0\WebAPI.sourcelink.json

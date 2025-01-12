@@ -1,10 +1,12 @@
 ﻿@*Session libraries*@
 @using Microsoft.AspNetCore.Http;
 @using Newtonsoft.Json;
+@using WMS_new.Controllers;
 
 @*Handle Session*@
 @{
     var uLogin = JsonConvert.DeserializeObject<User>(Context.Session.GetString("User"));
+    var currentWarehouse = JsonConvert.DeserializeObject<string>(Context.Session.GetString("CurrentWarehouse"));
 }
 
 <!DOCTYPE html>
@@ -94,7 +96,7 @@
                                 <li><a class="dropdown-item" asp-controller="CommitmentTime" asp-action="Index" asp-route-warrantyType="TTBH">Khai báo thời gian dự kiến Hãng cam kết (TTBH)</a></li> *@
                                         <li><a class="dropdown-item" asp-controller="CommitmentTime" asp-action="Index" asp-route-warrantyType="KHO">Khai báo tải vận chuyển/chuyển kho</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" asp-controller="Province" asp-action="Index">Khai báo Địa phương</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Nation" asp-action="Index">Khai báo Địa phương</a></li>
                                         <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse">Khai báo Kho</a></li>
                                         <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse_WarrantyCenter">Khai báo TTBH</a></li>
                                         <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="Index_Warehouse_WarrantyCenter_AtHome">Khai báo TTBHTN</a></li>
@@ -158,12 +160,11 @@
                                 <!--UserLogin-->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        @*@(@uLogin?.UserId + " - " + uLogin?.FullName + " - Kho làm việc: " + uWarehouseJoined?.WarehouseIdWork)*@
-                                        @(uLogin?.UserId + " - " + uLogin?.FullName + " -  Kho đang làm việc: " + uLogin?.WarehouseIdWork)
+                                        @(uLogin?.UserId + " - " + uLogin?.FullName + " -  Kho đang làm việc: " + currentWarehouse)
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" asp-controller="User" asp-action="joinWarehouse">Đổi mật khẩu</a></li>
-                                        <li><a class="dropdown-item" asp-controller="User" asp-action="joinWarehouse">Đổi kho đang làm việc</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Warehouse" asp-action="LogoutWarehouse">Đổi kho đang làm việc</a></li>
                                         <li><a class="dropdown-item" asp-controller="Users" asp-action="Logout">Đăng xuất</a></li>
                                     </ul>
                                 </li>

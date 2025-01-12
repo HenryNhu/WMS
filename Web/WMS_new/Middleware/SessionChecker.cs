@@ -15,16 +15,25 @@ namespace WMS_new.Middleware
         }
         public async Task InvokeAsync(HttpContext context)
         {
-            if (context.Request.Path == "/" || context.Request.Path.StartsWithSegments("/Users/Login"))
+            if (context.Request.Path == "/" 
+                || context.Request.Path.StartsWithSegments("/Users/Login") 
+                || context.Request.Path.StartsWithSegments("/Warehouse/SelectWorkingWarehouse")
+                )
             {
                 await _next(context);
                 return;
             }
 
             var session_Login = context.Session.GetString("User");
+            var session_CurrentWarehouse = context.Session.GetString("CurrentWarehouse");
             if (string.IsNullOrEmpty(session_Login))
             {
                 context.Response.Redirect("/Users/Login/");
+                return;
+            }
+            else if (string.IsNullOrEmpty(session_CurrentWarehouse))
+            { 
+                context.Response.Redirect("/Warehouse/SelectWorkingWarehouse/");
                 return;
             }
             await _next(context);

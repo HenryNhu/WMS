@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using WMS_new.Models;
 
 namespace WMS_new.Controllers
 {
@@ -13,7 +14,8 @@ namespace WMS_new.Controllers
         }
         public IActionResult SelectWorkingWarehouse()
         {
-            return View();
+            var uLogin = JsonConvert.DeserializeObject<User>(HttpContext.Session.GetString("User"));
+            return View(uLogin);
         }
         [HttpPost]
         public async Task<IActionResult> SelectWorkingWarehouse(int warehouseId)
@@ -48,6 +50,11 @@ namespace WMS_new.Controllers
                 ViewBag.ErrorMessage = "Lỗi kết nối tới sever!!! Hãy kiểm tra mạng hoặc liên hệ phòng Công nghệ thông tin";
                 return View("Login");
             }
+        }
+        public IActionResult LogoutWarehouse()
+        {
+            HttpContext.Session.Remove("CurrentWarehouse");
+            return RedirectToAction("SelectWorkingWarehouse", "Warehouse");
         }
     }
 }

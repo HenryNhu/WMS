@@ -9,7 +9,7 @@ namespace WMS_new.Controllers
 {
     public class UsersController : Controller
     {
-        private String URL_Login = "http://localhost:5269/api/API_Users?";
+        private string URL_Login = "http://localhost:5269/api/API_Users?";
         private readonly HttpClient _httpClient;
         public UsersController(HttpClient httpClient)
         {

@@ -109,6 +109,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPI.Controllers.API_NationController",
+    "Method": "GetNations",
+    "RelativePath": "api/API_Nation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WMS_new.Models.Nation, WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.API_NationController",
+    "Method": "PostNation",
+    "RelativePath": "api/API_Nation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nation",
+        "Type": "WMS_new.Models.Nation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WMS_new.Models.Nation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.Controllers.API_UsersController",
     "Method": "Login",
     "RelativePath": "api/API_Users",

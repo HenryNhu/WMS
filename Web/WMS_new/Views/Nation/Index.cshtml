@@ -1,0 +1,40 @@
+﻿@model WMS_new.Models.Nation
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="margin:10px">DANH SÁCH QUỐC GIA</h1>
+
+<a class="btn btn-primary float-end" asp-action="Add" role="button">Thêm Quốc gia</a>
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th><label asp-for="NationName"></label></th>
+            <th>Thông tin</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in ViewBag.Nations)
+            {
+                <tr>
+                    <td>
+                        <input type="hidden" @item.NationId />
+                        @item.NationName
+                    </td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="District" asp-action="Index" asp-route-id="@item.NationId" role="button">Xem thêm</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-success" asp-action="updateProvince" asp-route-id="@item.NationId" role="button">SỬA</a>
+                        <a class="btn btn-danger" asp-action="deleteProvince" asp-route-id="@item.NationId" role="button">XÓA</a>
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
